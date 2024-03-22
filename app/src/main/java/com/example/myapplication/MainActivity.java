@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
@@ -15,6 +16,8 @@ import androidx.core.view.WindowInsetsCompat;
 public class MainActivity extends AppCompatActivity {
     Button bouton;
     TextView textView;
+
+    ImageButton imageButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,6 +31,9 @@ public class MainActivity extends AppCompatActivity {
 
         bouton = findViewById(R.id.button);
         textView = findViewById(R.id.textView);
+        imageButton = findViewById(R.id.imageButton);
+        imageButton.setOnClickListener(v -> textView.setText(R.string.toto));
+
         Log.i("OnCreate()","onCreate");
         textView.setText("OnCreate()  \n");
         bouton.setOnClickListener(v -> textView.setText(R.string.toto));

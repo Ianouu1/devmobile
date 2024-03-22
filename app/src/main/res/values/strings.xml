@@ -2,5 +2,5 @@
     <string name="app_name">My Application</string>
     <string name="hello">Salut :)</string>
     <string name="button">Cest un bouton</string>
-    <string name="toto">SALUT TOTO</string>
+    <string name="toto">SALUT TOTO \n</string>
 </resources>

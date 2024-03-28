@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this); // permet de mettre le bandeau en transparent
         setContentView(R.layout.activity_main);
-        /*ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
+        /*  ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         bouton = findViewById(R.id.button);
         textView = findViewById(R.id.textView);
         imageButton = findViewById(R.id.imageButton);
-        imageButton.setOnClickListener(v -> textView.setText(R.string.cat));
+        imageButton.setOnClickListener(v -> textView.setText(imageButton.getContentDescription()));
 
         Log.i("OnCreate()","onCreate");
         textView.setText("OnCreate()  \n");

@@ -5,4 +5,7 @@
     <string name="toto">SALUT TOTO \n</string>
     <string name="cat">salut petit chat</string>
     <string name="hello_cat">OUAIS OUAIS LE PETIT CHAT</string>
+    <string name="bouton_un">Basculer sur le layout2</string>
+    <string name="bouton_deux">Basculer sur le layout1</string>
+    <string name="swaplayout">menfou du petit chat!</string>
 </resources>

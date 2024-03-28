@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
     TextView textView;
 
     ImageButton imageButton;
+    Button boutonswaplayout;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,8 +34,11 @@ public class MainActivity extends AppCompatActivity {
         bouton = findViewById(R.id.button);
         textView = findViewById(R.id.textView);
         imageButton = findViewById(R.id.imageButton);
+        boutonswaplayout = findViewById(R.id.swaplayoutbutton);
         imageButton.setOnClickListener(v -> textView.setText(imageButton.getContentDescription()));
+        boutonswaplayout.setOnClickListener(v -> R.layout.layout_un)
 
+        //log create
         Log.i("OnCreate()","onCreate");
         textView.setText("OnCreate()  \n");
 
@@ -42,6 +46,33 @@ public class MainActivity extends AppCompatActivity {
         int duration = Toast.LENGTH_SHORT;
         Toast toast = Toast.makeText(this, R.string.hello_cat, duration);
         bouton.setOnClickListener(v -> toast.show());
+
+
+    }
+
+    public void ActionButton(View view) {
+        if (view.getId() == R.id.swaplayoutbutton) {
+            // Échanger entre layout 1 et layout 2
+            if (boutonswaplayout.getText().equals("Layout 1")) {
+                setContentView(R.layout.layout_un);
+                boutonswaplayout.findViewById(R.id.bouton_un);
+            } else {
+                setContentView(R.layout.layout_deux);
+                boutonswaplayout.findViewById(R.id.bouton_deux);
+            }
+        } else if (view.getId() == R.id.bouton_un) {
+            // Échanger vers layout 2
+            setContentView(R.layout.layout_deux);
+            boutonswaplayout.setText("Layout 1");
+        } else if (view.getId() == R.id.bouton_deux) {
+            // Échanger vers layout 1
+            setContentView(R.layout.layout_un);
+            boutonswaplayout.setText("Layout 2");
+        }
+
+
+
+        setContentView(R.layout.layout_un);
 
     }
 

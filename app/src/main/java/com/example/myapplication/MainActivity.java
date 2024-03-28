@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         bouton = findViewById(R.id.button);
         textView = findViewById(R.id.textView);
         imageButton = findViewById(R.id.imageButton);
-        imageButton.setOnClickListener(v -> textView.setText(R.string.toto));
+        imageButton.setOnClickListener(v -> textView.setText(R.string.cat));
 
         Log.i("OnCreate()","onCreate");
         textView.setText("OnCreate()  \n");

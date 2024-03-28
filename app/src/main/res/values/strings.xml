@@ -4,4 +4,5 @@
     <string name="button">Cest un bouton</string>
     <string name="toto">SALUT TOTO \n</string>
     <string name="cat">salut petit chat</string>
+    <string name="hello_cat">OUAIS OUAIS LE PETIT CHAT</string>
 </resources>

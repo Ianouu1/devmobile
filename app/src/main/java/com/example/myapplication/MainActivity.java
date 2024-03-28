@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -36,7 +37,12 @@ public class MainActivity extends AppCompatActivity {
 
         Log.i("OnCreate()","onCreate");
         textView.setText("OnCreate()  \n");
-        bouton.setOnClickListener(v -> textView.setText(R.string.toto));
+
+        // Le petit toast
+        int duration = Toast.LENGTH_SHORT;
+        Toast toast = Toast.makeText(this, R.string.hello_cat, duration);
+        bouton.setOnClickListener(v -> toast.show());
+
     }
 
     @Override

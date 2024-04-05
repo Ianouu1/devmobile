@@ -8,4 +8,6 @@
     <string name="bouton_un">Basculer sur le layout2</string>
     <string name="bouton_deux">Basculer sur le layout1</string>
     <string name="swaplayout">menfou du petit chat!</string>
+    <string name="bouton_tp6">Basculer sur le TP6</string>
+
 </resources>

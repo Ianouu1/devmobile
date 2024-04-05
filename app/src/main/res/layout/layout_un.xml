@@ -10,10 +10,27 @@
         android:id="@+id/bouton_un"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/bouton_un"
         android:onClick="ActionButton"
+        android:text="@string/bouton_un"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.048" />
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="648dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ListView
+            android:id="@android:id/list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/marron"/>
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

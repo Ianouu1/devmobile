@@ -1,15 +1,19 @@
 package com.example.myapplication;
 
+import android.app.ListActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
@@ -23,14 +27,15 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this); // permet de mettre le bandeau en transparent
+        // Permet de desactiver le night mode de l'application, car sinon y'avais du texte en blanc sur du jaune qui ne pouvais pas être modifié :
+        //AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
+        //EdgeToEdge.enable(this); // permet de mettre le bandeau en transparent
         setContentView(R.layout.activity_main);
         /*  ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });*/
-
         bouton = findViewById(R.id.button);
         textView = findViewById(R.id.textView);
         imageButton = findViewById(R.id.imageButton);
@@ -48,12 +53,21 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void ActionButton(View view) {
-        if (view.getId() == R.id.swaplayoutbutton) {
+        if (view.getId() == R.id.swaplayoutbutton || view.getId() == R.id.bouton_deux) {
             setContentView(R.layout.layout_un);
+            loadDataLayout1();
         } else if (view.getId() == R.id.bouton_un) {
             setContentView(R.layout.layout_deux);
-        } else if (view.getId() == R.id.bouton_deux) {
-            setContentView(R.layout.layout_un);
+        }
+    }
+    public void loadDataLayout1() {
+        String[] data = new String[]{"Réseaux", "Mathématiques", "Probabilités Statistiques", "Gestion de Projet"};
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, data);
+        ListView listView = findViewById(android.R.id.list);
+        if (listView != null) {
+            listView.setAdapter(adapter);
+        } else {
+            Log.e("MainActivity", "ListView is null");
         }
     }
 

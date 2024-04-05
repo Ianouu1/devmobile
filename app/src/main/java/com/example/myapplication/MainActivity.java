@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
     public void loadDataLayout1() {
-        String[] data = new String[]{"Réseaux", "Mathématiques", "Probabilités Statistiques", "Gestion de Projet"};
+        String[] data = new String[]{"Réseaux", "Mathématiques", "Probabilités Statistiques", "Gestion de Projet", "Programmation objet", "Anglais", "Droit"};
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, data);
         ListView listView = findViewById(android.R.id.list);
         if (listView != null) {

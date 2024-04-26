@@ -9,5 +9,10 @@
     <string name="bouton_deux">Basculer sur le layout1</string>
     <string name="swaplayout">menfou du petit chat!</string>
     <string name="bouton_tp6">Basculer sur le TP6</string>
+    <string name="bouton_tp13">Basculer sur le TP13</string>
+    <string name="bouton1_tp13">Démarrer la seconde activité</string>
+    <string name="bouton2_tp13">Ne plus suivre la seconde activité</string>
+    <string name="title_activity_second">SecondActivity</string>
+
 
 </resources>

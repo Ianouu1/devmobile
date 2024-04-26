@@ -2,7 +2,10 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="jaune">#FFDE7A</color>
-    <color name="vert">#C4FF9A</color>
-    <color name="marron">#775938</color>
+    <color name="yellow">#FFDE7A</color>
+    <color name="green">#C4FF9A</color>
+    <color name="darkgreen">#366315</color>
+    <color name="brown">#775938</color>
+    <color name="blue">#DAFFF4</color>
+    <color name="red">#C12F2F</color>
 </resources>

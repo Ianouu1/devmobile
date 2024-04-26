@@ -1,6 +1,7 @@
 package com.example.myapplication;
 
 import android.app.ListActivity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -58,6 +59,8 @@ public class MainActivity extends AppCompatActivity {
             loadDataLayout1();
         } else if (view.getId() == R.id.bouton_un) {
             setContentView(R.layout.layout_deux);
+        } else if (view.getId() == R.id.bouton_tp13) {
+            setContentView(R.layout.layout_tp13);
         }
     }
     public void loadDataLayout1() {
@@ -71,6 +74,10 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    public void onClickActivity(View view) {
+        Intent intent = new Intent(this, SecondActivity.class);
+        startActivity(intent);
+    }
 
     @Override
     protected void onStart() {

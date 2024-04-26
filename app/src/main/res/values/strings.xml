@@ -5,15 +5,26 @@
     <string name="toto">SALUT TOTO \n</string>
     <string name="cat">salut petit chat</string>
     <string name="hello_cat">OUAIS OUAIS LE PETIT CHAT</string>
+    <string name="title_activity_second">SecondActivity</string>
+    <!--Boutons swap layout-->
     <string name="bouton_un">Basculer sur le layout2</string>
     <string name="bouton_deux">Basculer sur le layout1</string>
     <string name="swaplayout">menfou du petit chat!</string>
     <string name="bouton_tp6">Basculer sur le TP6</string>
-    <string name="bouton_tp13">Basculer sur le TP13</string>
-    <string name="bouton1_tp13">Démarrer la seconde activité</string>
-    <string name="bouton2_tp13">Ne plus suivre la seconde activité</string>
-    <string name="title_activity_second">SecondActivity</string>
-    <string name="tp13_Hello">Tu as bien lancé la seconde activité</string>
+    <string name="bouton_tp13">Basculer sur le TP13/TP16</string>
+    <!--Elements du TP13-->
+    <string name="tp13_bouton1">Démarrer la seconde activité (TP16)</string>
+    <!--Elements du TP16-->
+    <string name="tp16_bouton1">Partir du TP16</string>
+    <string name="tp16_bouton2">Calculer</string>
+
+    <string name="tp16_montant">Montant à emprunter : </string>
+    <string name="tp16_interet">Intérêts (taux) : </string>
+    <string name="tp16_mensualites">Nombre de mensualités : </string>
+    <string name="tp16_resultat">Résultat : </string>
+
+
+
 
 
 </resources>

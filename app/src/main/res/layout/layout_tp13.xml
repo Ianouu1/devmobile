@@ -23,7 +23,7 @@
         android:layout_height="wrap_content"
         android:backgroundTint="@color/darkgreen"
         android:onClick="onClickActivity"
-        android:text="@string/bouton1_tp13"
+        android:text="@string/tp13_bouton1"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

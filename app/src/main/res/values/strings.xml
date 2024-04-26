@@ -13,6 +13,7 @@
     <string name="bouton1_tp13">Démarrer la seconde activité</string>
     <string name="bouton2_tp13">Ne plus suivre la seconde activité</string>
     <string name="title_activity_second">SecondActivity</string>
+    <string name="tp13_Hello">Tu as bien lancé la seconde activité</string>
 
 
 </resources>
